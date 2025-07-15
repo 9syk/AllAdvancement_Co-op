@@ -283,7 +283,7 @@
         execute if entity @a[advancements={adventure/overoverkill=true}] as @a[advancements={adventure/overoverkill=false}] run advancement grant @s only adventure/overoverkill
     #この道をずっとゆけば adventure/use_lodestone
         execute unless score この道をずっとゆけば AAcount2 matches 1 if entity @a[advancements={adventure/use_lodestone=true}] run function aacoop:attain {"advancement":"この道をずっとゆけば"}
-        execute if entity @a[advancements={adventure/use_lodestone=true}] as @a[advancements={adventure/use_lodestone=false}] run advancement grant @s only nether/use_lodestone
+        execute if entity @a[advancements={adventure/use_lodestone=true}] as @a[advancements={adventure/use_lodestone=false}] run advancement grant @s only adventure/use_lodestone
 #hasbandry
     #農業 husbandry/root
         execute unless score 農業 AAcount2 matches 1 if entity @a[advancements={husbandry/root=true}] run function aacoop:attain {"advancement":"農業"}
