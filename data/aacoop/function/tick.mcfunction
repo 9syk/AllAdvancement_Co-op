@@ -284,6 +284,10 @@
     #この道をずっとゆけば adventure/use_lodestone
         execute unless score この道をずっとゆけば AAcount2 matches 1 if entity @a[advancements={adventure/use_lodestone=true}] run function aacoop:attain {"advancement":"この道をずっとゆけば"}
         execute if entity @a[advancements={adventure/use_lodestone=true}] as @a[advancements={adventure/use_lodestone=false}] run advancement grant @s only adventure/use_lodestone
+    #心臓移植者 adventure/heart_transplanter
+        execute unless score 心臓移植者 AAcount2 matches 1 if entity @a[advancements={adventure/heart_transplanter=true}] run function aacoop:attain {"advancement":"心臓移植者"}
+        execute if entity @a[advancements={adventure/heart_transplanter=true}] as @a[advancements={adventure/heart_transplanter=false}] run advancement grant @s only adventure/heart_transplanter
+
 #hasbandry
     #農業 husbandry/root
         execute unless score 農業 AAcount2 matches 1 if entity @a[advancements={husbandry/root=true}] run function aacoop:attain {"advancement":"農業"}
@@ -372,3 +376,6 @@
     #キレがいいね husbandry/remove_wolf_armor
         execute unless score キレがいいね AAcount2 matches 1 if entity @a[advancements={husbandry/remove_wolf_armor=true}] run function aacoop:attain {"advancement":"キレがいいね"}
         execute if entity @a[advancements={husbandry/remove_wolf_armor=true}] as @a[advancements={husbandry/remove_wolf_armor=false}] run advancement grant @s only husbandry/remove_wolf_armor
+    #水分補給を忘れずに！ adventure/heart_transplanter
+        execute unless score 水分補給を忘れずに！ AAcount2 matches 1 if entity @a[advancements={husbandry/place_dried_ghast_in_water=true}] run function aacoop:attain {"advancement":"水分補給を忘れずに！"}
+        execute if entity @a[advancements={husbandry/place_dried_ghast_in_water=true}] as @a[advancements={husbandry/place_dried_ghast_in_water=false}] run advancement grant @s only husbandry/place_dried_ghast_in_water
