@@ -1,2 +1,2 @@
-$execute if entity @a[advancements={$(category)/$(id)=true}] unless data storage aacoop: {done:[{category:$(category),id:$(id)}]} run function aacoop:loop/append with storage aacoop:
-$execute if data storage aacoop: {done:[{category:$(category),id:$(id)}]} run advancement grant @a[advancements={$(category)/$(id)=false}] only $(category)/$(id)
+$execute if entity @a[advancements={$(category)$(id)=true}] unless data storage aacoop: {done:[{category:$(category),id:$(id)}]} run function aacoop:loop/append with storage aacoop:
+$execute if data storage aacoop: {done:[{category:$(category),id:$(id)}]} run advancement grant @a[advancements={$(category)$(id)=false}] only $(category)$(id)
