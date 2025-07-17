@@ -1,1 +1,1 @@
-$function aacoop:loop/check with storage aacoop: remain[$(select)]
+$function aacoop:loop/check with storage aacoop: data[$(select)]

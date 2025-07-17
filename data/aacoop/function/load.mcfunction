@@ -1,3 +1,4 @@
 scoreboard objectives add aacoop dummy
 scoreboard objectives add aadisplay dummy
-say reloaded!
+function aacoop:setting/setup
+say aacoop reloaded!
