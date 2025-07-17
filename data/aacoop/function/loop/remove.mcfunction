@@ -1,1 +1,1 @@
-$data remove storage aacoop: remove[$(select)]
+$data remove storage aacoop: remain[$(select)]
