@@ -8,9 +8,15 @@
 
 データパックを導入するだけで動きます
 
+動かなかったら下記のコマンドで進捗一覧を再読み込みしてください
+
 # コマンド一覧
 
-`/function aacoop:reset`
+`/function aacoop:setting/setup`
+
+進捗一覧を再読み込みします
+
+`/function aacoop:setting/reset`
 
 オンラインのプレイヤー全員の進捗、残り進捗数のカウンターをリセットします
 
@@ -25,3 +31,9 @@ load.mcfunction等に以下のコマンドを`<namespace>`を書き換えて追�
 `data modify storage aacoop: data append value {name:"進捗名",id:"namespace:your_advancement_id"}`
 
 記述した進捗がロード時に自動で追加されます
+
+# 進捗一覧を直接追加する
+
+`data/aacoop/function/setting/library.mcfunction`
+
+に追加してください
