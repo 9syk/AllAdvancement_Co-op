@@ -28,7 +28,7 @@ load.mcfunction等に以下のコマンドを`<namespace>`を書き換えて追�
 
 `data/namespace/function/aacoop.mcfunction`を作成し、以下の形式で追加したい進捗を記述
 
-`data modify storage aacoop: data append value {name:"進捗名",id:"namespace:your_advancement_id"}`
+`data modify storage aacoop: data append value {name:"進捗名",id:"namespace:your_advancement_id",counter:bool}`
 
 記述した進捗がロード時に自動で追加されます
 
